@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "个人首页 Personal Homepage"
+title: "精神花园"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,3 +9,12 @@ redirect_from:
 落日挂滿你的窗戶
 
 粉紅和金黄是往后所有的顏色
+
+
+
+今日心情:
+
+你是很早就放弃了很多事的人。无论你再怎么放弃，不得不放弃的事情依然层出不穷。你以为已经足够了，新事依旧在迫近。尽管人生如此，你依旧认真活着，早晨醒来睁开眼，就看到新的要放弃的一日。
+
+
+
