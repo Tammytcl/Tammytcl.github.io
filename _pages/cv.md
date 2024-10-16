@@ -14,7 +14,8 @@ Education
 - **Undergraduate**, 2022 - Present 
   - Shandong University
   - **Major**: Computer Science and Technology
-  - **GPA**: 91.59/100
+  - **GPA**: 90.132/100     
+  - **Rank:** 4/106
   - **English Proficiency**: CET4 607, CET6 575
 
 
@@ -63,6 +64,7 @@ Awards
 * 2022 Mathorcup University Mathematical Modeling Challenge Competition Big Data Competition Undergraduate Group / 2022 年 Mathorcup 高校数学建模挑战赛大数据竞赛本科生组 - Second Prize 二等奖
 * The 4th "HuaShu Cup" National College Student Mathematical Modeling Competition Undergraduate Group / 第四届“华数杯”全国大学生数学建模竞赛 本科生组 - Second Prize 二等奖
 * Future Designer National College Digital Art & Design Competition / 未来设计师·全国高校数字艺术设计大赛 - National Second Prize 全国二等奖
+* 2024 China College Computer Competition - AIGC Innovation Competition / 2024中国高校计算机大赛·AIGC创新赛 - National Second Prize 全国二等奖
 
 
 
