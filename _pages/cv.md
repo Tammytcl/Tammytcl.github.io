@@ -23,17 +23,42 @@ Education
 
 # Research Experience
 
-## 心脏医学影像分割 Cardiac Medical Image Segmentation  
-### December 2023 - May 2024
-- **目标 (Objective):** Designed an advanced cardiac segmentation network employing the Multi-Scale, Multi-Head Self-Attention (MSMHSA) mechanism for enhanced feature extraction. 设计了一个采用多尺度多头自注意力（MSMHSA）机制的先进心脏分割网络，增强特征提取能力。
-- **方法(Approach):** Integrated MSMHSA into the DeepLab V3+ architecture, leveraging its strengths in capturing contextual information and improving segmentation accuracy through decoder skip connections. 将MSMHSA集成到DeepLab V3+架构中，利用其在捕获上下文信息和通过解码器跳跃连接提高分割精度方面的优势。
-- **成果(Outcome):** Published in *"J. Imaging 2024, 10, 135"* with the title "MSMHSA-DeepLab V3+: An Effective Multi-Scale, Multi-Head Self-Attention Network for Dual-Modality Cardiac Medical Image Segmentation."
+## 心脏图像合成与分割研究 Research on Cardiac Image Synthesis and Segmentation
+### August 2024 - October 2024
+- **目标 (Objective):** Proposed a Feature Quantization-based Cardiac Diffusion Model (FQCDM) to address issues of data scarcity, noise, and class imbalance in cardiac image datasets, ultimately enhancing the performance and robustness of cardiac image segmentation. 提出一种基于特征量化的心脏图像合成模型，以应对心脏图像数据集中的样本稀缺、噪声和类别不平衡问题，提升心脏图像分割的性能和鲁棒性。
+- **创新(Innovation):**
+  1.	Developed the Feature Quantization-based Cardiac Diffusion Model (FQCDM), integrating Denoising Diffusion Probabilistic Model (DDPM) with feature quantization to generate high-quality cardiac images. 提出特征量化心脏扩散模型（FQCDM），结合去噪扩散概率模型（DDPM）和特征量化生成高质量的心脏图像。
+  2.	Designed a Dual-Branch Discriminator (DBD) for simultaneous evaluation of global features and edge information, enhancing the diversity and quality of generated images. 设计双分支GAN判别器（DBD），同时评估生成图像的全局特征和边缘信息，提高生成图像的多样性和质量。
+  3.	Proposed three strategies to improve segmentation performance using synthetic cardiac images: mixed training, self-supervised pre-training, and integration with data augmentation for optimized cardiac segmentation models. 提出三种利用合成心脏图像提升分割性能的策略：混合训练、自监督预训练以及数据增强结合，以优化现有心脏图像分割模型。
+- **效果(Achievement):**  Experiments demonstrate that FQCDM can generate high-quality cardiac images with similar distribution properties, significantly enhancing segmentation performance on the MMWHS-2017 and ACDC cardiac datasets. The inclusion of synthetic data and the application of the three training strategies yielded substantial accuracy improvements, confirming the feasibility and effectiveness of synthetic cardiac data in cardiac segmentation tasks. 实验表明FQCDM能够生成高质量且分布相似的心脏图像，显著提升了在MMWHS-2017和ACDC等心脏数据集上的分割性能。特别是通过合成数据的引入和三种训练策略的应用，实现了显著的分割精度提升，验证了合成心脏数据在心脏图像分割任务中的可行性和有效性。
+- **发表状态(Publication Status):**  Manuscript under review in the IEEE Journal of Biomedical and Health Informatics (JBHI, Category 1, Chinese Academy of Sciences) titled “FQCDM: Feature Quantization-Based Cardiac Image Diffusion Synthesis Model.” 
 
+## 医学影像分割 Medical Image Segmentation
+### August 2024 - October 2024
+- **目标 (Objective):** Developed a parallel CNN and Mamba architecture to balance parameter efficiency, computational complexity, and segmentation accuracy. 开发了一种并行的CNN和Mamba架构, 实现了平衡参数量、运算复杂度和分割效果。
+- **创新(Innovation):**
+	1.	Introduced the PCMamba architecture, combining Mamba’s long-range modeling capabilities with the convolutional advantage for capturing fine-grained structures, significantly improving segmentation performance at both coarse and fine granularities. 我们探索性地结合了Mamba在长距离建模方面的卓越能力与卷积在细微结构捕捉中的优势，提出了PCMamba架构，通过并行处理显著提升了医学图像分割的粗细粒度性能。
+	2.	Designed two innovative modules, the DiscWideFusion module and RepLKWideFusion module, to optimize feature extraction: DiscWideFusion uses dilated convolutions to capture multi-scale features while minimizing parameters and computational costs; RepLKWideFusion combines small and large kernels for enhanced precision in capturing subtle structures. 我们引入了DiscWideFusion模块和RepLKWideFusion模块，分别利用离散卷积和多尺寸卷积组合来优化多尺度特征提取，提高了模型精度并降低了参数量。
+	3.	Developed a gated adaptive loss function that dynamically adjusts training parameters based on model performance, leading to significant improvements in segmentation accuracy for challenging regions, such as low-contrast boundaries. 设计了门控自适应损失函数，根据模型表现动态调整训练参数，有效提升复杂区域的分割精度。
+- **效果(Achievement):**  Achieved state-of-the-art results across multiple single and multi-organ segmentation tasks on ACDC, MMWHS-CT, LAHeart2018, TN3K, DDTI, Synapse, ISIC2016, ISIC2017, and PH2 datasets, demonstrating the model’s superior performance across diverse organs and imaging modalities. 在ACDC、MMWHS-CT、LAHeart2018、TN3K、DDTI、Synapse、ISIC2016、ISIC2017、PH2多个器官的单/多语义分割任务上取得了SOTA效果, 证明了我们的模型在不同器官不同成像模式下的效果优越。
+- **发表状态(Publication Status):**  Manuscript under review in IEEE Transactions on Medical Imaging (TMI, Category 1, Chinese Academy of Sciences) titled “PCMamba: Parallel Convolution-Mamba Network for Medical Image Segmentation.” 一区期刊IEEE Transactions on Medical Imaging（TMI）中科院一区在投，论文名字为“PCMamba: Parallel Convolution-Mamba Network for Medical Image Segmentation”。
+
+## 心脏医学影像分割 Cardiac Medical Image Segmentation
 ### March 2024 - August 2024
 - **目标 (Objective):** Developed a novel cardiac segmentation model, PSVT, integrating the Transformer architecture with CNNs for efficient feature extraction. 开发了一种名为PSVT的新型心脏分割模型，将Transformer架构与CNNs融合，以提高特征提取效率。
-- **创新(Innovation):** Implemented a unique biased window generation method and depthwise convolution to optimize global and local feature recognition, enhancing computational efficiency and reducing memory footprint. 通过独特的偏置窗口生成方法和深度卷积优化了全局和局部特征识别，提高了计算效率并减少了内存占用。
-- **效果(Achievement):** Achieved superior results on the ACDC, MMWHS-CT, and LASEG-2013 datasets, outperforming contemporary segmentation methodologies. 在ACDC、MMWHS-CT和LASEG-2013数据集上取得了优异的结果，超越了当代的分割技术。
-- **发表状态(Publication Status):** Manuscript under review in *"Biomedical Signal Processing and Control"* (Category 2, Chinese Academy of Sciences) with the title "PSVT: Pyramid Shifted Window based Vision Transformer for Cardiac Image Segmentation."
+- **创新(Innovation):**
+	1.	Introduced a biased window generation method and depthwise convolution to optimize both global and local feature recognition, enhancing computational efficiency and reducing memory consumption. 提出了独特的偏置窗口生成方法和深度卷积，优化了全局和局部特征识别，提高了计算效率并减少了内存占用。
+	2.	Refined the attention mechanism by combining the Swin-Transformer-v2 attention module with convolutional blocks and integrating DW-conv layers into the feedforward layer. This architecture boosts the model’s feature extraction capabilities for both local and global patches. 在注意力机制中结合Swin-Transformer-v2的注意力模块与卷积模块，并在前馈层中集成了DW-conv层，增强了对局部和全局特征的提取能力。
+	3.	Redesigned the Patch Merging and Patch Expanding modules using transposed convolutions, improving the integration of multi-scale features in the upsampling and downsampling stages. 重构了Patch Merging和Patch Expanding模块，采用转置卷积提高了多尺度特征的集成效果。
+- **效果(Achievement):**  Achieved superior results on the ACDC, MMWHS-CT, and LASEG-2013 datasets, outperforming contemporary segmentation methodologies. 在ACDC、MMWHS-CT和LASEG-2013数据集上取得了优异的结果，超越了当代的分割技术。
+- **发表状态(Publication Status):**  Manuscript under review in Biomedical Signal Processing and Control (Category 2, Chinese Academy of Sciences) with the title “PSVT: Pyramid Shifted Window based Vision Transformer for Cardiac Image Segmentation.”
+
+## 心脏医学影像分割 Cardiac Medical Image Segmentation  
+### December 2023 - May 2024
+- **目标 (Objective):** Designed an advanced cardiac segmentation network employing the Multi-Scale, Multi-Head Self-Attention (MSMHSA) mechanism for enhanced feature extraction. 设计了一个采用多尺度多头自注意力（MSMHSA）机制的先进心脏分割网络，增强特征提取能力，以提高心脏结构的分割精度。
+- **方法 (Approach):** Integrated MSMHSA into the DeepLab V3+ architecture, leveraging its strengths in capturing contextual information and improving segmentation accuracy through decoder skip connections. 将MSMHSA集成到DeepLab V3+架构中，利用其在捕获上下文信息和通过解码器跳跃连接提高分割精度方面的优势。通过在不同尺度下引入三个独立的MHSA机制，进一步增强了对心脏亚结构的精确分割能力。
+- **成果 (Outcome):**   Published in “J. Imaging 2024, 10, 135” with the title “MSMHSA-DeepLab V3+: An Effective Multi-Scale, Multi-Head Self-Attention Network for Dual-Modality Cardiac Medical Image Segmentation.” 
+
 
 ## 三维空间自由弯管一体化成型研究 Research on Integrated Forming of 3D Spatial Free Bending Pipe
 ### October 2023 - April 2024
@@ -100,26 +125,40 @@ Scholarships and Honorary Titles
 - **Supervisor**: Professor Gu Wu (吴贾教授)
 
 ## November 2023 - May 2024: Undergraduate Research Assistant (URAP)
-- **Project Title**: Medical Volumetry Based on Machine Learning (基于机器学习的医学体绘制)
+- **Project Title**: Medical Volumetric Based on Machine Learning (基于机器学习的医学体绘制)
 - **Institution**: Shandong University (山东大学)
 - **Key Responsibilities**:
   - Engaged in a pioneering project applying machine learning algorithms to medical volumetry, aiming to enhance diagnostic accuracy and efficiency in clinical settings. (参与应用机器学习算法于医学体积测量的开创性项目，旨在提高临床环境中的诊断准确性和效率。)
   - Assisted in the development and refinement of machine learning models, including data preparation, feature extraction, and model training, under the guidance of a seasoned academic mentor. (在经验丰富的学术导师的指导下，协助开发和完善机器学习模型，包括数据准备、特征提取和模型训练。)
-- **Mentor**: Associate Professor Yang Fei (杨飞副教授)
+- **Mentor**: Associate Professor Fei Yang(杨飞副教授)
 
+## October 2024 - November 2024: Undergraduate Research Assistant (URAP)
+- **Project Title**:  Development of AI Recognition System for Raw Materials (荒料AI识别系统的研发)
+- **Institution**: Shandong University (山东大学)
+- **Key Responsibilities**:
+  - Implemented inverse perspective transformations to process images, enabling the generation of top-down views for improved analysis of raw materials.
+  - 利用逆透视变换处理图片，获取俯视图以改善对原材料的分析。
+  - Employed the YOLOv5 model to train AI algorithms for the recognition of raw materials, facilitating the accurate determination of their volumes.
+  - 利用YOLOv5模型进行AI算法训练，以识别原材料并准确确定其体积。
+  - Conducted data preprocessing and augmentation to enhance the training dataset, improving the model’s performance and robustness.
+  - 进行数据预处理和增强，以提升训练数据集，提高模型的性能和鲁棒性。
+- **Mentor**: Associate Professor Yong Liu (刘勇副教授)
 ---
 
 Skills
-======
+  ======
 * **Reading Enthusiast** - Passionate about reading a variety of books across literature, history, technology, and more, continuously enhancing my knowledge and cultural literacy. 阅读爱好者 - 热衷于阅读各类书籍，涵盖文学、历史、科技等多个领域，不断提升自我知识水平和文化素养。
 * **Sports Lover** - Enjoy playing basketball and table tennis. I appreciate the joy of teamwork and competition. 运动爱好者 - 享受团队合作与竞技的快感。
 * **Musical Theatre Enthusiast** - Deeply interested in musical theatre, appreciating the artistic charm of the combination of music and drama.音乐剧爱好者 - 对音乐剧有深厚兴趣，欣赏音乐剧的艺术魅力，享受音乐与戏剧的完美结合。
+* **Guitar Learner** - Currently learning to play the guitar. My progress may not yet be concert-ready, but I appreciate the journey! 吉他在学，目前正在学习吉他，虽然水平还未达到演出标准，但我很享受这个过程！
 
 
 
 
 ---
 # Other Awards(一些很水的奖)
+- The 18th iCAN Innovation Contest (Shandong) (2024), Provincial Third Prize. (第十八届iCAN大学生创新创业大赛山东赛区三等奖 2024年)
+- The 9th China International College Students' Innovation Contest (2024), National Gold Award. (第九届中国国际大学生创新大赛/互联网+ 全国赛金奖 2024年)
 - The 9th China International College Students' Innovation Contest (2024), Shandong Province Gold Award. (第九届中国国际大学生创新大赛/互联网+ 山东省金奖 2024年)
 - "Goertek Cup" 19th Shandong University Intelligent Innovation and Smart Creative Design Competition for Mechanical and Electrical Products (2024), First and Third Prizes. ("歌尔杯"第十九届山东大学机电产品智能创新与智慧创意设计竞赛 一、三等奖 2024年)
 - The 15th Shandong University College Students' Energy Conservation and Emission Reduction Social Practice and Science and Technology Competition (2024), Second and Third Prizes. (山东大学第十五届大学生节能减排社会实践与科技竞赛 二、三等奖 2024年)
