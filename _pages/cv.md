@@ -145,8 +145,8 @@ Scholarships and Honorary Titles
 - **Mentor**: Associate Professor Yong Liu (刘勇副教授)
 
 ---
-#Skills
-======
+
+# Skills
 * **Reading Enthusiast** - Passionate about reading a variety of books across literature, history, technology, and more, continuously enhancing my knowledge and cultural literacy. 阅读爱好者 - 热衷于阅读各类书籍，涵盖文学、历史、科技等多个领域，不断提升自我知识水平和文化素养。
 * **Sports Lover** - Enjoy playing basketball and table tennis. I appreciate the joy of teamwork and competition. 运动爱好者 - 享受团队合作与竞技的快感。
 * **Musical Theatre Enthusiast** - Deeply interested in musical theatre, appreciating the artistic charm of the combination of music and drama.音乐剧爱好者 - 对音乐剧有深厚兴趣，欣赏音乐剧的艺术魅力，享受音乐与戏剧的完美结合。
