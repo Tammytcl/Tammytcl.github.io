@@ -41,7 +41,7 @@ Support for MathJax Version 3.0 is included in the template:
 
 $$
 \displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
+\nabla \cdot E= \dfrac{\rho}{\epsilon_0} \\\
 \nabla \cdot B=0 \\\
 \nabla \times E= -\partial_tB \\\
 \nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
